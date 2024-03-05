@@ -1,15 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaviProjeto.MainPage">
-
+             x:Class="MaviProjeto.MainPage"
+             Shell.NavBarIsVisible="false">
     <Grid>
         <Image  Source="fundocomeco.png"
-                Aspect="AspectFill"
-                HorizontalOptions="Fill"
+                Aspect="Fill"
+                HorizontalOptions="Center"
                 VerticalOptions="Fill"/>
 
-        <Label  Text="Peguntas e Respostas"
+        <Label  Text="Perguntas e Respostas"
+                TextColor="#fff9e8"
+                Margin="50"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
                 FontSize="40"
                 FontFamily="Sendcat"/>
 
@@ -27,6 +31,35 @@
                     Margin="10,0"
                     HorizontalOptions="Fill"/>
 
+            <Button Text="Sobre"
+                    Clicked="BotaoSobreFoiClicado"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    BackgroundColor="#fff9e8"
+                    TextColor="Black"
+                    FontSize="18"
+                    Margin="10,0"
+                    HorizontalOptions="Fill"/> 
         </VerticalStackLayout>
+
+
+            <Frame  x:Name="frameSobre"
+                    IsVisible="False"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    BackgroundColor="Blue">
+
+            <VerticalStackLayout>
+
+            <Label  Text="Sobre"
+                    VerticalOptions="Fill"/>
+
+            <Button Text="Fechar"
+                    VerticalOptions="End"
+                    BackgroundColor="Pink"
+                    TextColor="White"
+                    Clicked="BotaoFecharFoiClicado"/>
+            </VerticalStackLayout>
+        </Frame>
     </Grid>
 </ContentPage>

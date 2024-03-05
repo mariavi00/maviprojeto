@@ -6,5 +6,15 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	void BotaoSobreFoiClicado(object sender, EventArgs args)
+	{
+		frameSobre.IsVisible = true;
+	}
+
+	void BotaoFecharFoiClicado(object sender, EventArgs args)
+	{
+		frameSobre.IsVisible = false;
+	}
 }
 
