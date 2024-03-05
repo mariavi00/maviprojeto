@@ -3,4 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MaviProjeto.MainPage">
 
+    <Grid>
+        <Image  Source="fundocomeco.png"
+                Aspect="AspectFill"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"/>
+
+        <Label  Text="Peguntas e Respostas"
+                FontSize="40"
+                FontFamily="Sendcat"/>
+
+        <VerticalStackLayout
+                VerticalOptions="End"
+                Spacing="10"
+                Margin="15,0,15,40">       
+
+            <Button Text="Iniciar"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    BackgroundColor="#fff9e8"
+                    TextColor="Black"
+                    FontSize="18"
+                    Margin="10,0"
+                    HorizontalOptions="Fill"/>
+
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>
