@@ -45,21 +45,42 @@
 
             <Frame  x:Name="frameSobre"
                     IsVisible="False"
-                    HorizontalOptions="Fill"
-                    VerticalOptions="Fill"
-                    BackgroundColor="Blue">
+                    CornerRadius="30"
+                    Margin="15"
 
-            <VerticalStackLayout>
+                    BackgroundColor="#fff9e8">
 
-            <Label  Text="Sobre"
-                    VerticalOptions="Fill"/>
+           <Grid>  
+            <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>        
+
+             <Label Text="Sobre"
+                    TextColor="Black"
+                    Margin="20"
+                    FontSize="40"
+                    FontFamily="Sendcat"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    Grid.Row="0"/>
+
+            <Label  Text="lll"
+                    Grid.Row="1"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    FontFamily="CachetStdBold"/>
 
             <Button Text="Fechar"
-                    VerticalOptions="End"
-                    BackgroundColor="Pink"
+                    BackgroundColor="#6b2e65"
                     TextColor="White"
-                    Clicked="BotaoFecharFoiClicado"/>
-            </VerticalStackLayout>
+                    Clicked="BotaoFecharFoiClicado"
+                    Grid.Row="2"/>
+         </Grid>           
+            
         </Frame>
     </Grid>
 </ContentPage>
