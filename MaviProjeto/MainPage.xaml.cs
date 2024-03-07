@@ -16,5 +16,10 @@ public partial class MainPage : ContentPage
 	{
 		frameSobre.IsVisible = false;
 	}
+
+	void BotaoIniciarFoiClicado(object sender, EventArgs args)
+	{
+		Application.Current.MainPage = new SegundaTela();
+	}
 }
 

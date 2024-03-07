@@ -23,6 +23,7 @@
                 Margin="15,0,15,40">       
 
             <Button Text="Iniciar"
+                    Clicked="BotaoIniciarFoiClicado"
                     HeightRequest="50"
                     CornerRadius="25"
                     BackgroundColor="#fff9e8"
@@ -66,15 +67,16 @@
                     HorizontalTextAlignment="Center"
                     Grid.Row="0"/>
 
-            <Label  Text="lll"
+            <Label  Text="Aplicativo criado por Maria Vitória e Rafaela Reis, com o intuito de testar o conhecimento geral de uma forma divertida. Elaborado para um projeto de Desenvolvimento de Sistemas do terceiro ano do ensino médio."
                     Grid.Row="1"
                     TextColor="Black"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    FontSize="20"
+                    FontSize="25"
                     FontFamily="CachetStdBold"/>
 
             <Button Text="Fechar"
+                    CornerRadius="25"
                     BackgroundColor="#6b2e65"
                     TextColor="White"
                     Clicked="BotaoFecharFoiClicado"
