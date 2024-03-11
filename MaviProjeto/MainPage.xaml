@@ -71,6 +71,7 @@
                     Grid.Row="1"
                     TextColor="Black"
                     HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
                     VerticalOptions="Center"
                     FontSize="25"
                     FontFamily="CachetStdBold"/>

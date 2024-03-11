@@ -18,9 +18,50 @@
            CornerRadius="25"
            Grid.Row="0">
 
+     <Label x:Name="TextodaLabel"
+            TextColor="Black"
+            LineHeight="1.2"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"
+            FontSize="20"
+            FontFamily="CachetStdBold"/>
+
     </Frame>   
 
-    <Button 
+     <Button x:Name="BotaoResposta01"
+             BackgroundColor="#fff9e8"
+             TextColor="Black"
+             HeightRequest="50"
+             CornerRadius="15"
+             Margin="20"
+             FontSize="16"
+             HorizontalOptions="Fill"
+             FontFamily="CachetStdBold"
+             Grid.Row="1"/>
+
+      <Button x:Name="BotaoResposta02"
+             BackgroundColor="#fff9e8"
+             TextColor="Black"
+             HeightRequest="50"
+             CornerRadius="15"
+             Margin="20"
+             FontSize="16"
+             HorizontalOptions="Fill"
+             FontFamily="CachetStdBold"
+             Grid.Row="2"/>
+
+      <Button x:Name="BotaoResposta03"
+             BackgroundColor="#fff9e8"
+             TextColor="Black"
+             HeightRequest="50"
+             CornerRadius="15"
+             Margin="20"
+             FontSize="16"
+             HorizontalOptions="Fill"
+             FontFamily="CachetStdBold"
+             Grid.Row="3"/>       
+    
     
 
     </Grid> 
