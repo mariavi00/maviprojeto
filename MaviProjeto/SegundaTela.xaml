@@ -62,7 +62,34 @@
              FontFamily="CachetStdBold"
              Grid.Row="3"/>       
     
-    
+       <Frame x:Name="frameGanhou"
+           IsVisible="false"
+           BackgroundColor="#fcba03"
+           Margin="20"
+           CornerRadius="25"
+           Grid.Row="1"
+           Grid.RowSpan="3">
+
+       <Label Text="Você ganhou!!"
+            TextColor="Black"
+            LineHeight="1.2"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"
+            FontSize="20"
+            FontFamily="CachetStdBold"/>
+       
+       <Button Text="Voltar ao início"
+             BackgroundColor="#fff9e8"
+             TextColor="Black"
+             HeightRequest="50"
+             CornerRadius="15"
+             Margin="20"
+             FontSize="16"
+             HorizontalOptions="Fill"
+             FontFamily="CachetStdBold"/>
+
+       </Frame>    
 
     </Grid> 
    

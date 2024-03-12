@@ -9,7 +9,8 @@
    public int IdLevelResposta01;
    public int IdLevelResposta02;
    public int IdLevelResposta03;
-   public bool GameOver = false;
+   public bool GameOver;
+   public bool Ganhou;
 
 
  }

@@ -74,4 +74,29 @@ public partial class SegundaTela : ContentPage
 		IdLevelResposta02=10,
 	});
 
+	historia.Add(new PontodaHistoria()
+	{
+		Id = 5,
+		Texto = "Parabéns!! Você acertou todas respostas.",
+		TemResposta=false,
+		Ganhou=true
+	});
+
+	historia.Add(new PontodaHistoria()
+	{
+		Id = 10,
+		Texto = "Você errou!",
+		TemResposta=false,
+		GameOver=true
+	});
+
+	Iniciar();
+	}
+
+	void Iniciar()
+	{
+		TrocaPontodaHistoriaAtual(0);
+	}
+
+
 }
