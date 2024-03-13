@@ -30,6 +30,7 @@
     </Frame>   
 
      <Button x:Name="BotaoResposta01"
+             Clicked="Botao01FoiClicado"
              BackgroundColor="#fff9e8"
              TextColor="Black"
              HeightRequest="50"
@@ -41,6 +42,7 @@
              Grid.Row="1"/>
 
       <Button x:Name="BotaoResposta02"
+             Clicked="Botao02FoiClicado"
              BackgroundColor="#fff9e8"
              TextColor="Black"
              HeightRequest="50"
@@ -52,6 +54,7 @@
              Grid.Row="2"/>
 
       <Button x:Name="BotaoResposta03"
+             Clicked="Botao03FoiClicado"
              BackgroundColor="#fff9e8"
              TextColor="Black"
              HeightRequest="50"
@@ -80,6 +83,7 @@
             FontFamily="CachetStdBold"/>
        
        <Button Text="Voltar ao início"
+             Clicked="BotaoDeVoltarClicado"
              BackgroundColor="#fff9e8"
              TextColor="Black"
              HeightRequest="50"
@@ -90,6 +94,36 @@
              FontFamily="CachetStdBold"/>
 
        </Frame>    
+
+       <Frame x:Name="frameGameOver"
+           IsVisible="false"
+           BackgroundColor="#fcba03"
+           Margin="20"
+           CornerRadius="25"
+           Grid.Row="1"
+           Grid.RowSpan="3">
+
+       <Label Text="Você perdeu."
+            TextColor="Black"
+            LineHeight="1.2"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"
+            FontSize="20"
+            FontFamily="CachetStdBold"/>
+       
+       <Button Text="Voltar ao início"
+              Clicked="BotaoDeVoltarClicado"
+             BackgroundColor="#fff9e8"
+             TextColor="Black"
+             HeightRequest="50"
+             CornerRadius="15"
+             Margin="20"
+             FontSize="16"
+             HorizontalOptions="Fill"
+             FontFamily="CachetStdBold"/>
+
+       </Frame>
 
     </Grid> 
    
