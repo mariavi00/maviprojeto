@@ -67,11 +67,19 @@
     
        <Frame x:Name="frameGanhou"
            IsVisible="false"
-           BackgroundColor="#fcba03"
+           Padding="0"
+           BorderColor="#fff9e8"
+           BackgroundColor="#fff9e8"
            Margin="20"
            CornerRadius="25"
            Grid.Row="1"
            Grid.RowSpan="3">
+
+        <Grid>
+     <Grid.RowDefinitions>
+         <RowDefinition Height="60"/>
+         <RowDefinition Height="60"/>
+     </Grid.RowDefinitions>
 
        <Label Text="Você ganhou!!"
             TextColor="Black"
@@ -80,28 +88,41 @@
             HorizontalTextAlignment="Center"
             VerticalOptions="Center"
             FontSize="20"
-            FontFamily="CachetStdBold"/>
+            FontFamily="CachetStdBold"
+            Grid.Row="0"/>
        
        <Button Text="Voltar ao início"
              Clicked="BotaoDeVoltarClicado"
-             BackgroundColor="#fff9e8"
-             TextColor="Black"
+             BackgroundColor="#6b2e65"
+             TextColor="White"
              HeightRequest="50"
              CornerRadius="15"
-             Margin="20"
+             Margin="20,0"
              FontSize="16"
              HorizontalOptions="Fill"
-             FontFamily="CachetStdBold"/>
+             FontFamily="CachetStdBold"
+             Grid.Row="1"/>
+
+        </Grid>
 
        </Frame>    
 
        <Frame x:Name="frameGameOver"
            IsVisible="false"
-           BackgroundColor="#fcba03"
+           Padding="0"
+           BackgroundColor="#fff9e8"
+           BorderColor="#fff9e8"
            Margin="20"
            CornerRadius="25"
            Grid.Row="1"
            Grid.RowSpan="3">
+
+        <Grid>
+     <Grid.RowDefinitions>
+         <RowDefinition Height="60"/>
+         <RowDefinition Height="60"/>
+     </Grid.RowDefinitions>
+
 
        <Label Text="Você perdeu."
             TextColor="Black"
@@ -110,18 +131,22 @@
             HorizontalTextAlignment="Center"
             VerticalOptions="Center"
             FontSize="20"
-            FontFamily="CachetStdBold"/>
-       
-       <Button Text="Voltar ao início"
+            FontFamily="CachetStdBold"
+            Grid.Row="0"/>
+
+        <Button Text="Voltar ao início"
               Clicked="BotaoDeVoltarClicado"
-             BackgroundColor="#fff9e8"
-             TextColor="Black"
+             BackgroundColor="#6b2e65"
+             TextColor="White"
              HeightRequest="50"
              CornerRadius="15"
-             Margin="20"
+             Margin="20,0"
              FontSize="16"
              HorizontalOptions="Fill"
-             FontFamily="CachetStdBold"/>
+             FontFamily="CachetStdBold"
+             Grid.Row="1"/>
+       
+        </Grid>
 
        </Frame>
 

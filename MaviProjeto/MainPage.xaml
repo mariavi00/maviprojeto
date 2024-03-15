@@ -67,7 +67,7 @@
                     HorizontalTextAlignment="Center"
                     Grid.Row="0"/>
 
-            <Label  Text="Aplicativo criado por Maria Vitória e Rafaela Reis, com o intuito de testar o conhecimento geral de uma forma divertida. Elaborado para um projeto de Desenvolvimento de Sistemas do terceiro ano do ensino médio."
+            <Label  Text="Aplicativo criado por Maria Vitória Gouveia e Rafaela Reis da Silva, com o intuito de testar o conhecimento geral de uma forma divertida. Elaborado para um projeto de Desenvolvimento de Sistemas do terceiro ano do ensino médio, supervisionado pelo professor Thiago Macedo, no Colégio Sesi da Indústria de Apucarana."
                     Grid.Row="1"
                     TextColor="Black"
                     HorizontalOptions="Center"
